@@ -101,8 +101,8 @@ class AudioSignal(TimeSignal):
             'y_range': (-1, 1), 
             'tools': 'xpan,xwheel_zoom,box_zoom,xzoom_in,xzoom_out,save,reset', 
             'active_drag': 'xpan',
-            'active_inspect': None,
-            'active_scroll': None,
+            'active_inspect': 'auto',
+            'active_scroll': 'auto',
             'toolbar_location': 'above',
         }
         hover_tool = HoverTool(
@@ -141,8 +141,8 @@ class Spectrum(Signal):
             'x_axis_label': 'frequency [Hz]', 'y_axis_label': 'amplitude',
             'tools': 'pan,wheel_zoom,box_zoom,zoom_in,zoom_out,save,reset', 
             'active_drag': 'pan',
-            'active_inspect': None,
-            'active_scroll': None,
+            'active_inspect': 'auto',
+            'active_scroll': 'auto',
             'toolbar_location': 'above',
         }
         hover_tool = HoverTool(
@@ -197,8 +197,8 @@ class Spectrogram(Signal):
             'x_axis_label': 'time [s]', 'y_axis_label': 'frequency [Hz]',
             'tools': 'hover,pan,wheel_zoom,box_zoom,zoom_in,zoom_out,save,reset',
             'active_drag': 'pan',
-            'active_inspect': None,
-            'active_scroll': None,
+            'active_inspect': 'auto',
+            'active_scroll': 'auto',
             'toolbar_location': 'above',
             'tooltips': [('time [s]', '$x{0.000}'), ('frequency [Hz]', '$y{0.}'), ['amplitude', '@image']],
         }
